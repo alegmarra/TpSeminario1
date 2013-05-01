@@ -1,0 +1,62 @@
+Title: Professors grades students 
+ 
+Narrative:
+As a Professor
+I want to grade students based on submited code
+So that I can determine who's this week "winner"
+ 
+#Acceptance Criteria: (presented as Scenarios)
+ 
+Scenario 1: Submited code is still private
+Given Only I can see everyones code
+  And Student already started the project
+When  Students flags it as finished
+Then  a message should arrive to my updates page
+  And a proposed grade based on "finishing time" should be presented
+
+
+Scenario 2: Studen flags code as finished
+Given Deadline not met yet
+And   Code is still private
+When  I recieve a notification message
+Then  A link should lead me to submited code page
+And   A grading field based on quality should be enabled.
+
+Scenario 3: Estipulated deadline met
+Given not all the students finished their project
+When  deadline hour arrives
+Then  all projects get closed and no other submitions are alowed
+And   all projects became public for peer review
+
+Scenario 4: Peer Review enabled
+Given Every student can see its classmates code
+When  one students grades somebody else's code
+Then  grade's made public
+And   The real grade submited is calculated based on the
+      grader "category". Contribution on open questions, 
+      comments made graded positive (more on this later), 
+      grader average score, etc.
+
+Scenario 5: Peer graded Peer
+Given A peer grade was made public
+When  the submitter confirms it
+Then  Justification may be asked by code owner
+And   Grader and Professor should be notified
+
+Scenario 6: Discussion deadline met
+Given Time was given to every user to check other's code 
+And   grades should be fixed so a new project starts
+When  professor asks for an average score of a particular code
+Then  Ponderate average is calculated based on wich peer gave the grade, 
+      how many aprroved fixed were made and the professors grades.
+And   project "winner" or "winners" is notified in updates page.
+
+Scenario 7: Project is closed
+Given a winner was proclaimed 
+When a new project has started
+Then comments on previous code is enabled
+And  code editing is disabled
+
+
+
+
