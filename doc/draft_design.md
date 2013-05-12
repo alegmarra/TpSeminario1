@@ -5,7 +5,7 @@ Notes about proyect design
 
 Classes
 -------
-Reading the user stories I identified the following posible classes
+Reading the user stories and the google doc, I identified the following posible classes
 
     (class  ? interface ?)User
     |
@@ -14,20 +14,30 @@ Reading the user stories I identified the following posible classes
     |_  class Student
           Rate / Score
 
-    class ClassRoom
-      Proffesor
-      Students *
-      Proyects
+    class Group
+      class ClassRoom / PrivateClass
+        Proffesor
+        Students *
+        Proyects
+
+      class Comunity / OpenGroup
+        Users
+
 
     class Code #?
       #Status
-      Score
+      Score / Rate
       Issues *
       Student #Author
       Version
       Editions #?
+      Discussion #?
 
-    class Proyect
+    class Proyect / Problem ? #Here, I don't know if a proyect is a solution or if it's the problem itself.
       Description
       FinishTime
       Code *
+      Discussion #?
+
+    class Discussion #This may be trivial
+      Comments *
