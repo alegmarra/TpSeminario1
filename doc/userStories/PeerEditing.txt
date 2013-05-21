@@ -4,7 +4,7 @@ As a User
 I want to edit someone else's code
 So that I can fix/correct it
 
-//Note: Should NOT be used to give a diferent version, to that porpouse
+//Note: Should NOT be used to give a diferent version, to that purpose
 // 	exits each user on version of the project resolution.
 //	Edition is meant to do minor modifications
 
