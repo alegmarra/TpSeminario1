@@ -43,7 +43,13 @@ When  the submitter confirms it
 Then  Justification may be asked by code owner
 And   Grader and Professor should be notified
 
-Scenario 6: Discussion deadline met
+Scenario 6: Peer commented on someone else's code
+Given Peer review is enabled
+When  A peer made a comment
+Then  The owner should receive a notification
+ And  Everyone else that's been active on the discussion receives a notification
+
+Scenario 7: Discussion deadline met
 Given Time was given to every user to check other's code 
 And   grades should be fixed so a new project starts
 When  professor asks for an average score of a particular code
@@ -51,7 +57,7 @@ Then  Ponderate average is calculated based on wich peer gave the grade,
       how many aprroved fixed were made and the professors grades.
 And   project "winner" or "winners" is notified in updates page.
 
-Scenario 7: Project is closed
+Scenario 8: Project is closed
 Given a winner was proclaimed 
 When a new project has started
 Then comments on previous code is enabled
