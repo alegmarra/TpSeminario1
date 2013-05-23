@@ -58,7 +58,21 @@ ____________________________________________________
 Feature: Guest wants to enroll in a class 
 As a guest in www.cloudcodecampus.com
 I want to enroll in a class
-so I can submit my excellent solution
+so I can submit my excellent solution to one of its projects
+
+
+Scenario: Guests first view
+Given Im a guest
+When I enter the home page
+Then I should see a list with public projects and  on click, its submitions
+
+Scenario: Guest found interesting project
+Given Im on a project page
+When I click on "Submit solution"
+Then I should be redirect to User SignUp or Login
+
+Scenario: 
+
 
 
 
