@@ -1,5 +1,3 @@
-Title: User wants to teach 
- 
 Feature:
 As a User
 I want to create a class about a certain subject
@@ -48,64 +46,3 @@ Given User has already configured the group
 When  User clicks the 'create group' button
 Then  the app should redirect to the new group view
  And  I should be enbabled to accept calls members
-
-
-
-
-____________________________________________________
-
-
-Feature: Guest wants to enroll in a class 
-As a guest in www.cloudcodecampus.com
-I want to enroll in a class
-so I can submit my excellent solution to one of its projects
-
-
-Scenario: Guests first view
-Given Im a guest
-When I enter the home page
-Then I should see a list with public projects and  on click, its submitions
-
-Scenario: Guest found interesting project
-Given Im on a project page
-When I click on "Submit solution"
-Then I should be redirect to User SignUp or Login
-
-Scenario: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="12" hostname="alemarra-DeskLinux" name="grade student" tests="12" time="0.361" timestamp="2013-05-23T13:09:00">
+<testsuite errors="0" failures="12" hostname="alemarra-NoteLinux" name="grade student" tests="12" time="0.429" timestamp="2013-05-23T20:04:13">
   <properties />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Submited code is still private" time="0.046">
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Submited code is still private" time="0.039">
     <failure message="Undefined Step: Given I&apos;m in my home page" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given I&apos;m in my home page
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
@@ -55,7 +55,7 @@
 	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
 </failure>
   </testcase>
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="" time="0.205">
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="" time="0.048">
     <failure message="Undefined Step: Given Only I can see everyones code" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given Only I can see everyones code
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
@@ -122,7 +122,7 @@
 	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
 </failure>
   </testcase>
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Studen flags code as finished" time="0.016">
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Studen flags code as finished" time="0.049">
     <failure message="Undefined Step: Given Deadline not met yet" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given Deadline not met yet
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
@@ -189,7 +189,7 @@
 	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
 </failure>
   </testcase>
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Estipulated deadline met" time="0.012">
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Estipulated deadline met" time="0.039">
     <failure message="Undefined Step: Given not all the students finished their project" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given not all the students finished their project
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
@@ -243,7 +243,7 @@
 	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
 </failure>
   </testcase>
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="First stage completed" time="0.007">
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="First stage completed" time="0.029">
     <failure message="Undefined Step: Given Deadline was met" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given Deadline was met
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
@@ -284,7 +284,7 @@
 	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
 </failure>
   </testcase>
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Peer Review enabled" time="0.006">
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Peer Review enabled" time="0.029">
     <failure message="Undefined Step: Given Every student can see its classmates code" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given Every student can see its classmates code
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
@@ -325,7 +325,7 @@
 	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
 </failure>
   </testcase>
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Peer grade submitted" time="0.006">
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Peer grade submitted" time="0.029">
     <failure message="Undefined Step: Given Student graded peer&apos;s code" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given Student graded peer&apos;s code
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
@@ -366,7 +366,7 @@
 	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
 </failure>
   </testcase>
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Peer graded Peer" time="0.007">
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Peer graded Peer" time="0.039">
     <failure message="Undefined Step: Given A peer grade was made public" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given A peer grade was made public
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
@@ -420,7 +420,7 @@
 	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
 </failure>
   </testcase>
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Discussion deadline met" time="0.005">
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Discussion deadline met" time="0.031">
     <failure message="Undefined Step: Given Grading deadline is met" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given Grading deadline is met
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
@@ -461,7 +461,7 @@
 	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
 </failure>
   </testcase>
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Ponderated average calculation" time="0.005">
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Ponderated average calculation" time="0.032">
     <failure message="Undefined Step: Given I click on &quot;total average&quot;" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given I click on &quot;total average&quot;
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
@@ -475,7 +475,7 @@
 	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
 	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
 </failure>
-    <failure message="Undefined Step: When &quot;grades by status&quot; were calculated" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: When &quot;grades by status&quot; were calculated
+    <failure message="Undefined Step: When grades by status were calculated" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: When grades by status were calculated
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
 	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
@@ -502,7 +502,7 @@
 	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
 </failure>
   </testcase>
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="project winner" time="0.006">
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="project winner" time="0.029">
     <failure message="Undefined Step: Given All grades were calculated" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given All grades were calculated
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
@@ -529,7 +529,7 @@
 	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
 	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
 </failure>
-    <failure message="Undefined Step: Then &quot;Top 3&quot; should be exposed with gold, silver and bronze medals" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Then &quot;Top 3&quot; should be exposed with gold, silver and bronze medals
+    <failure message="Undefined Step: Then Top 3 should be exposed with gold, silver and bronze medals" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Then Top 3 should be exposed with gold, silver and bronze medals
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
 	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
@@ -543,8 +543,8 @@
 	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
 </failure>
   </testcase>
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Project is closed" time="0.009">
-    <failure message="Undefined Step: Given a &quot;winner&quot; was proclaimed" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given a &quot;winner&quot; was proclaimed
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Project is closed" time="0.028">
+    <failure message="Undefined Step: Given a winner was proclaimed" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given a winner was proclaimed
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
 	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
@@ -570,7 +570,7 @@
 	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
 	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
 </failure>
-    <failure message="Undefined Step: Then &quot;comments&quot; on previous code is enabled" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Then &quot;comments&quot; on previous code is enabled
+    <failure message="Undefined Step: Then comments on previous code is enabled" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Then comments on previous code is enabled
 	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
 	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
 	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
@@ -669,20 +669,20 @@
 --Output from Ponderated average calculation--
   Scenario: Ponderated average calculation                                  # ProfessorGradesStudents.feature:64
     Given I click on "total average"
-    When "grades by status" were calculated
+    When grades by status were calculated
     Then number of bugs found and  number of fixes should be ponderated too
 
 --Output from project winner--
-  Scenario: project winner                                             # ProfessorGradesStudents.feature:69
+  Scenario: project winner                                           # ProfessorGradesStudents.feature:69
     Given All grades were calculated
     When I asks for project top 3 students
-    Then "Top 3" should be exposed with gold, silver and bronze medals
+    Then Top 3 should be exposed with gold, silver and bronze medals
 
 --Output from Project is closed--
   Scenario: Project is closed                          # ProfessorGradesStudents.feature:74
-    Given a "winner" was proclaimed
+    Given a winner was proclaimed
     When a new project has started or course completed
-    Then "comments" on previous code is enabled
+    Then comments on previous code is enabled
     And code editing is disabled
 ]]></system-out>
   <system-err><![CDATA[

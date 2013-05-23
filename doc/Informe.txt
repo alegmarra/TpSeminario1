@@ -1,0 +1,64 @@
+ 
+	CCC: Cloud Code Campus (C³ )
+
+Integrantes:
+	Bogado Sebastian 		91707
+	García Marra Alejandro 		91516
+	Romero Hector 			92248 
+
+Objetivo:
+
+Desarrollar una plataforma web para aprendizaje de programación, resolución de ejercicios y desarrollo de código de forma comunitaria, la cual puede tomar la forma de clase online, Group de estudio o Group de resolución de problemas Open.
+
+Para cualquier Group se tiene un Admin y puede tener varios SuperUser que lo administren. Estos controlan todo lo relacionado con los Members de dicho Group, los Projects y sus Solutions subidas. 
+Cada Project puede tener n Solutions asociadas, cada una con un puntaje, y siempre se tiene una "Best Solution". 
+
+Cada Solution tiene asociada una sección de Comments, un tracking de Fixes y versiones. El Solution Edit está relacionado con los permisos que decida habilitar el Admin. Además, se da soporte para descarga de los archivos que componen la Solution.
+
+Un Group puede ser 
+
+	Open:   Cualquiera puede hacerse Member y subir Solutions. 
+		Cualquiera puede proponer Projects para que el Admin o SuperUsers lo aprueben
+		Un Guest de la web puede verlo y ver sus Projects y Solutions.
+
+	Closed: Para hacerse Member hay que hacer un Request al Admin o SuperUsers.
+		Idem Open.
+		Sólo los Users pueden verlo, asi como también sus Projects y Solutions.
+
+	Private: Puede hacerse Member sólo por Invite de un Member existente.
+		 Idem Closed.
+		 Sólo sus Members pueden verlo.
+
+	Class:  Tipo especial de Private, donde:
+			Admin = Professor
+			SuperUser = Assistants or Collaborators
+			Members = Students
+		Sólo pueden enviar Invites el Professor o los Assistants.
+		Solo los Professors y Assistants pueden subir Projects.
+
+Se dice que todos los Users forman la Community.
+
+Cualquier User puede, por su cuenta, abrir un "Community Project", donde todo User puede participar con su Solution.
+
+En el formato Class, Professor y SU (a partir de ahora "admins"), junto con un Project pueden subir los lineamientos básicos de resolución. Esto puede ser en la forma de links, textos o archivos.
+Para el soporte de transferencia de archivos, se tiene asociada una cuenta de DropBox* por Group. Se recomienda que todos los resources externos sean subidos a dicha carpeta.
+También en este formato, los admins plantean distintos Deadlines asociados a cada Project. El primero es para la subida de Solutions, el segundo para la etapa de "Peer Reviews" y el tercero para la etapa de "Comments Only".
+
+Durante la primer etapa, las Solutions son privadas para los Students y solo pude verla el Owner y los admins. 
+Durante el Peer Review se bloquea la subida de solutions y se lleva a cabo la calificación de trabajos entre pares.
+
+Las calificaciones o Grades de una Class, son análogas a los Scores de las Solutions en el resto de los Groups.
+Todo Grade o Score está ponderado por distintos factores como: Average Score (AS) de sus Solutions, sus participaciones (Comments con buen AS.
+Las Grades, ademas, se ven afectadas por el tiempo de subida de la Solution y los Grades asignados por los admins.
+El Admin de cualquier group puede habilitar distintos Scores, por ejemplo, Code Quality, Solution Effectiveness, Solution Efficienci, etc.
+Si el Admin de cualquier Group así lo desea, los Scores pueden ser Private o Public. Public puede ser únicamente le número o número y nombre del User que la asignó.
+
+En una clase, se pueden establecer trabajos iterativos de mejora sobre soluciones previas. Esto puede ser "mejorar la solución propia subida antes para que haga X" o "trabajar sobre la mejor solución del Project previo para lograr X", etc.
+
+Una clase puede tener un Class Deadline, por ejemplo un cuatrimestre, a partir del cual se termina la asociación de Students y admins. Los admins pueden elegir si los Projects quedan en forma Public, Private, Historical (Solo puede leerse, sin comentar) o se eliminan.
+
+Cada User se queda con una copia propia asociada a su cuenta de Cada una de sus Solutions. 
+
+
+Los Scores adquiridos en Class o Private Group no se transfieren para el promedio a los Community, Closed o Public Groups.
+

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="7" hostname="alemarra-NoteLinux" name="" tests="7" time="0.152" timestamp="2013-05-23T20:04:14">
+  <properties />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="User can create a class" time="0.026">
+    <failure message="Undefined Step: Given I am at home page" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given I am at home page
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: When I click on &quot;new group&quot;" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: When I click on &quot;new group&quot;
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: Then the app should redirect to the group config view" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Then the app should redirect to the group config view
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: And I should become Admin in this group" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: And I should become Admin in this group
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+  </testcase>
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Admin configures the class" time="0.018">
+    <failure message="Undefined Step: Given User is at the Group config view" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given User is at the Group config view
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: When User sets the subject &quot;New Technologies Class&quot;" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: When User sets the subject &quot;New Technologies Class&quot;
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: Then a message should show similar classes like &quot;New Technologies&quot;" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Then a message should show similar classes like &quot;New Technologies&quot;
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+  </testcase>
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="I want to add my friend as Super User" time="0.022">
+    <failure message="Undefined Step: Given I&apos;m at group config view" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given I&apos;m at group config view
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: When I click on &quot;Invite&quot;" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: When I click on &quot;Invite&quot;
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: Then A window should appear with SuperUser and Member fields" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Then A window should appear with SuperUser and Member fields
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: And should be able to manage new users in each field." type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: And should be able to manage new users in each field.
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+  </testcase>
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="I want to block unexperienced users from joining" time="0.022">
+    <failure message="Undefined Step: Given I&apos;m at group config view" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given I&apos;m at group config view
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: When I click on &quot;Correlatives&quot;" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: When I click on &quot;Correlatives&quot;
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: Then I should see all groups" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Then I should see all groups
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: And be able to search by name and description" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: And be able to search by name and description
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+  </testcase>
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="I want lots of contributions in my group and its projects" time="0.017">
+    <failure message="Undefined Step: Given I&apos;m at group config view" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given I&apos;m at group config view
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: When I clock on &quot;Privacy&quot;" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: When I clock on &quot;Privacy&quot;
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: Then I should be able to select &quot;Private group&quot;" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Then I should be able to select &quot;Private group&quot;
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+  </testcase>
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="I want some privacy in my group and its projects" time="0.017">
+    <failure message="Undefined Step: Given I&apos;m at group config view" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given I&apos;m at group config view
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: When I clock on &quot;Privacy&quot;" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: When I clock on &quot;Privacy&quot;
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: Then I should be able to select &quot;public group&quot;" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Then I should be able to select &quot;public group&quot;
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+  </testcase>
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="User uploads the group" time="0.024">
+    <failure message="Undefined Step: Given User has already configured the group" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given User has already configured the group
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: When User clicks the &apos;create group&apos; button" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: When User clicks the &apos;create group&apos; button
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: Then the app should redirect to the new group view" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Then the app should redirect to the new group view
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: And I should be enbabled to accept calls members" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: And I should be enbabled to accept calls members
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Feature: 
+  As a User
+  I want to create a class about a certain subject
+  So that I can distribute my knowledge
+
+--Output from User can create a class--
+  Scenario: User can create a class                       # UserWantsToTeach.feature:7
+    Given I am at home page
+    When I click on "new group"
+    Then the app should redirect to the group config view
+    And I should become Admin in this group
+
+--Output from Admin configures the class--
+  #Trivial?
+  Scenario: Admin configures the class                                 # UserWantsToTeach.feature:14
+    Given User is at the Group config view
+    When User sets the subject "New Technologies Class"
+    Then a message should show similar classes like "New Technologies"
+
+--Output from I want to add my friend as Super User--
+  Scenario: I want to add my friend as Super User                # UserWantsToTeach.feature:19
+    Given I'm at group config view
+    When I click on "Invite"
+    Then A window should appear with SuperUser and Member fields
+    And should be able to manage new users in each field.
+
+--Output from I want to block unexperienced users from joining--
+  Scenario: I want to block unexperienced users from joining # UserWantsToTeach.feature:25
+    Given I'm at group config view
+    When I click on "Correlatives"
+    Then I should see all groups
+    And be able to search by name and description
+
+--Output from I want lots of contributions in my group and its projects--
+  #Trivial?
+  Scenario: I want lots of contributions in my group and its projects # UserWantsToTeach.feature:32
+    Given I'm at group config view
+    When I clock on "Privacy"
+    Then I should be able to select "Private group"
+
+--Output from I want some privacy in my group and its projects--
+  #Trivial?
+  Scenario: I want some privacy in my group and its projects # UserWantsToTeach.feature:38
+    Given I'm at group config view
+    When I clock on "Privacy"
+    Then I should be able to select "public group"
+
+--Output from User uploads the group--
+  Scenario: User uploads the group                     # UserWantsToTeach.feature:44
+    Given User has already configured the group
+    When User clicks the 'create group' button
+    Then the app should redirect to the new group view
+    And I should be enbabled to accept calls members
+]]></system-out>
+  <system-err><![CDATA[
+--Output from User can create a class--
+--Output from Admin configures the class--
+--Output from I want to add my friend as Super User--
+--Output from I want to block unexperienced users from joining--
+--Output from I want lots of contributions in my group and its projects--
+--Output from I want some privacy in my group and its projects--
+--Output from User uploads the group--]]></system-err>
+</testsuite>

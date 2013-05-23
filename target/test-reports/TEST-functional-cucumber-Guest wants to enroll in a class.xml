@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="2" hostname="alemarra-NoteLinux" name="Guest wants to enroll in a class" tests="2" time="0.154" timestamp="2013-05-23T20:04:13">
+  <properties />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Guests first view" time="0.076">
+    <failure message="Undefined Step: Given Im a guest" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given Im a guest
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: When I enter the home page" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: When I enter the home page
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: Then I should see a list with public projects and  on click, its submitions" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Then I should see a list with public projects and  on click, its submitions
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+  </testcase>
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Guest found interesting project" time="0.03">
+    <failure message="Undefined Step: Given Im on a project page" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Given Im on a project page
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: When I click on &quot;Submit solution&quot;" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: When I click on &quot;Submit solution&quot;
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+    <failure message="Undefined Step: Then I should be redirect to User SignUp or Login" type="grails.plugin.cucumber.FakeAssertionFailedError">cucumber.runtime.UndefinedStepException: Undefined Step: Then I should be redirect to User SignUp or Login
+	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:242)
+	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:207)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:250)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:112)
+	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:58)
+	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:57)
+	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:102)
+	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:57)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Feature: Guest wants to enroll in a class
+  As a guest in www.cloudcodecampus.com
+  I want to enroll in a class
+  so I can submit my excellent solution to one of its projects
+
+--Output from Guests first view--
+  Scenario: Guests first view                                                   # GuestWantsToSubmitCode.feature:6
+    Given Im a guest
+    When I enter the home page
+    Then I should see a list with public projects and  on click, its submitions
+
+--Output from Guest found interesting project--
+  Scenario: Guest found interesting project           # GuestWantsToSubmitCode.feature:11
+    Given Im on a project page
+    When I click on "Submit solution"
+    Then I should be redirect to User SignUp or Login
+]]></system-out>
+  <system-err><![CDATA[
+--Output from Guests first view--
+--Output from Guest found interesting project--]]></system-err>
+</testsuite>
