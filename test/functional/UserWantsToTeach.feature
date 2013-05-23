@@ -7,18 +7,25 @@ So that I can distribute my knowledge
  
 
 Scenario: User can create a class
-Given User is at home page
-When  clicks on "new group"
-Then  the app should redirect to the "group" config view
+Given I am at home page
+When  I click on "new group"
+Then  the app should redirect to the group config view
+And   I should become Admin in this group
 
-# Este escenario debería ser ascendido a User Story?
 # La idea era poner los campos mínimos que podrían ir en una clase
-Scenario: User configures the class
-Given User is at the class config view
-When  User sets the subject
-Then  the class' subject is set
- And  a message should show similar classes
-When  User sets the class collaborators
+Scenario: Admin configures the class
+Given User is at the Group config view
+When  User sets the subject "New Technologies Class"
+Then  a message should show similar classes like "New Technologies"
+
+Scenario: I want to add my friend as Super User
+Given I'm at group config view 
+When  I click on "Invite" 
+Then  A window should appear with SuperUser and Member fields
+And   should be able to manage new users in each field.
+
+Scenario: I want to block unexperienced users from joining
+Given Im
  And  User sets the correlatives
  And  User sets privacy level # Would be nicer "publicy level", more friendly and open styled
  And  User sets duration
