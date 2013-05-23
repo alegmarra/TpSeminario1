@@ -26,7 +26,7 @@ Then  the class' subject is set
  And  a message should show similar classes
 When  User sets the class collaborators
  And  User sets the correlatives
- And  User sets privacy level # Would be nicer "publicy level", more friendly and open styled
+ And  User sets privacy level # Would be nicer "publicly level", more friendly and open styled
  And  User sets duration
  And  User sets start date
  And  User sets tags

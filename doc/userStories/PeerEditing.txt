@@ -8,13 +8,13 @@ So that I can fix/correct it
 // 	exits each user on version of the project resolution.
 //	Edition is meant to do minor modifications
 
-Scenario 4: Peer Review enabled
+Scenario 1: Peer Review enabled
 Given Every student can see its classmates code
 When  an error or bug is spoted
 Then  Anyone can edit the code
 And   Code author is notified
 
-Scenario 5: Peer edited code
+Scenario 2: Peer edited code
 Given Someone edits another person's code
 When The edition is saved
 Then a new version is created
