@@ -12,7 +12,7 @@ When  I click on "new group"
 Then  the app should redirect to the group config view
 And   I should become Admin in this group
 
-# La idea era poner los campos mínimos que podrían ir en una clase
+#Trivial?
 Scenario: Admin configures the class
 Given User is at the Group config view
 When  User sets the subject "New Technologies Class"
@@ -30,26 +30,68 @@ When  I click on "Correlatives"
 Then  I should see all groups
 And   be able to search by name and description
 
+#Trivial?
 Scenario: I want lots of contributions in my group and its projects
 Given I'm at group config view
 When  I clock on "Privacy"
 Then  I should be able to select "Private group"
 
+#Trivial?
 Scenario: I want some privacy in my group and its projects
 Given I'm at group config view
 When  I clock on "Privacy"
 Then  I should be able to select "public group"
 
- And  User sets duration
- And  User sets start date
- And  User sets tags
- And  User sets #whatever
-Then  the class is configured
 
-Scenario: User creates a class
-Given User has already configured the class
-When  User clicks the 'create class' button
-Then  the class is created
- And  the app should redirect to the new class view #Where he is a Professor and can send invitations?
+Scenario: User uploads the group
+Given User has already configured the group
+When  User clicks the 'create group' button
+Then  the app should redirect to the new group view
+ And  I should be enbabled to accept calls members
+
+
+
+
+____________________________________________________
+
+
+Feature: Guest wants to enroll in a class 
+As a guest in www.cloudcodecampus.com
+I want to enroll in a class
+so I can submit my excellent solution
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
