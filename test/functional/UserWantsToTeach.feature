@@ -25,9 +25,21 @@ Then  A window should appear with SuperUser and Member fields
 And   should be able to manage new users in each field.
 
 Scenario: I want to block unexperienced users from joining
-Given Im
- And  User sets the correlatives
- And  User sets privacy level # Would be nicer "publicy level", more friendly and open styled
+Given I'm at group config view
+When  I click on "Correlatives"
+Then  I should see all groups
+And   be able to search by name and description
+
+Scenario: I want lots of contributions in my group and its projects
+Given I'm at group config view
+When  I clock on "Privacy"
+Then  I should be able to select "Private group"
+
+Scenario: I want some privacy in my group and its projects
+Given I'm at group config view
+When  I clock on "Privacy"
+Then  I should be able to select "public group"
+
  And  User sets duration
  And  User sets start date
  And  User sets tags
