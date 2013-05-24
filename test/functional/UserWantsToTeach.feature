@@ -4,45 +4,39 @@ I want to create a class about a certain subject
 So that I can distribute my knowledge
  
 
-Scenario: User can create a class
-Given I am at home page
-When  I click on "new group"
-Then  the app should redirect to the group config view
-And   I should become Admin in this group
+Scenario: Create new class
+Given I just logged in as User
+When  I crate a new group
+Then  I should become Admin of this group
+And   be able to configure all its properties
 
-#Trivial?
 Scenario: Admin configures the class
-Given User is at the Group config view
-When  User sets the subject "New Technologies Class"
-Then  a message should show similar classes like "New Technologies"
+Given I have to name the group 
+When  I name the group with "New Technologies Class - Part II"
+Then  I should be informed of similar classes like "New Technologies 101"
 
-Scenario: I want to add my friend as Super User
-Given I'm at group config view 
-When  I click on "Invite" 
-Then  A window should appear with SuperUser and Member fields
-And   should be able to manage new users in each field.
-
-Scenario: I want to block unexperienced users from joining
-Given I'm at group config view
-When  I click on "Correlatives"
-Then  I should see all groups
-And   be able to search by name and description
-
-#Trivial?
-Scenario: I want lots of contributions in my group and its projects
-Given I'm at group config view
-When  I clock on "Privacy"
-Then  I should be able to select "Private group"
-
-#Trivial?
-Scenario: I want some privacy in my group and its projects
-Given I'm at group config view
-When  I clock on "Privacy"
-Then  I should be able to select "public group"
+#Trivial
+Scenario: Admin adds SuperUsers
+Given I need a collaborator
+When  I invite another user to join 
+Then  I should select to invite him as SuperUser or Member
 
 
-Scenario: User uploads the group
-Given User has already configured the group
-When  User clicks the 'create group' button
+Scenario: Block unexperienced users from joining
+Given I want to set a minimun knowledge basis for this group
+When  I decide wich correlatives are required
+Then  I should be informed of all other groups.be able to search by name and description
+And   add those selected as required for a User to Join.
+
+
+Scenario: Setting up visibility and contribution policies
+Given I want lots of Members in my group 
+When  I set my privacy level to "Public"
+Then  My group should be discoverable by any User 
+And   allow Users to Join when they meet the requirements
+
+Scenario: Enable joinings and uploads
+Given I have already configured the group
+When I upload it 
 Then  the app should redirect to the new group view
  And  I should be enbabled to accept calls members
