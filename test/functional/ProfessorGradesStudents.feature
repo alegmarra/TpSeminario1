@@ -58,13 +58,13 @@ And   Grader and Professor should be notified
 
 Scenario: Discussion deadline met
 Given Grading deadline is met 
-When  I ask for an average score of a particular code
+When  I awant to have an average score of a particular Solution
 Then  Ponderate average is calculated
 
 Scenario: Ponderated average calculation
-Given I click on "total average"
-When grades by status were calculated
-Then number of bugs found and  number of fixes should be ponderated too
+Given I want to see the "total average" of a student
+When grades by status were calculated for each Solution
+Then the number of bugs found, number of fixes and comments AS should be ponderated too
 
 Scenario: project winner
 Given All grades were calculated
