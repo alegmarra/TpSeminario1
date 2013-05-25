@@ -15,14 +15,17 @@ Reading the user stories and the google doc, I identified the following posible 
           Rate / Score
 
     class Group
+	admin
+	users
+      
       class ClassRoom / PrivateClass
-        Proffesor
-        Students *
+        Proffesor #Admin
+        Students * #Normal Users
         Proyects
 
       class Comunity / OpenGroup
         Users
-
+        Admin
 
     class Code #?
       #Status
