@@ -16,10 +16,12 @@ Reading the user stories and the google doc, I identified the following posible 
 
     class Group
 	admin
+	roots
 	users
       
       class ClassRoom / PrivateClass
         Proffesor #Admin
+        Assistants * #SuperUser
         Students * #Normal Users
         Proyects
 
@@ -36,7 +38,7 @@ Reading the user stories and the google doc, I identified the following posible 
       Editions #?
       Discussion #?
 
-    class Proyect / Problem ? #Here, I don't know if a proyect is a solution or if it's the problem itself.
+    class Project / Problem ? #The project is the problem itself
       Description
       FinishTime
       Code *
@@ -44,3 +46,11 @@ Reading the user stories and the google doc, I identified the following posible 
 
     class Discussion #This may be trivial
       Comments *
+
+    class Settings
+      subject
+      correlatives
+      "publicly" level
+      duration
+      start date
+      tags
