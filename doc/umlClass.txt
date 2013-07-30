@@ -1,0 +1,62 @@
+@startuml
+
+'/Relaciones/'
+
+Group "1" o-- "1..*" Member
+
+Member *-- MemberData
+Member *-- Membership
+
+User *-- Membership
+
+Group "1" o-- "0..*" Project : has
+
+Project "1" o-- "0..*" Solution
+
+Solution "1" o-- "0..*" Fix
+
+Project o-- "2" DeadLine
+
+'/Atributos y metodos/'
+
+class User {
+  String userName
+}
+
+class Membership {
+  -String userName
+  -String groupName 
+  +String key
+}
+
+class Solution {
+	-List<Score> atomicScores
+	String creatorsName
+	Score average
+}
+
+class Project {
+	String objective
+	Visibility visibility
+	State state
+}
+
+class Fix {
+	-List<Score> atomicScores
+	String creatorsName
+	Score average
+}
+
+class Group {
+	String name
+	
+	-Member admin
+	-List<Member> collaborator
+}
+
+class DeadLine {
+	String description
+	Time endTime
+}
+
+@enduml
