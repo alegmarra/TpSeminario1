@@ -1,8 +1,0 @@
-
---Output from User can create a class--
---Output from Admin configures the class--
---Output from I want to add my friend as Super User--
---Output from I want to block unexperienced users from joining--
---Output from I want lots of contributions in my group and its projects--
---Output from I want some privacy in my group and its projects--
---Output from User uploads the group--
