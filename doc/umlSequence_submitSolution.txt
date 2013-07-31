@@ -1,0 +1,60 @@
+@startuml
+
+actor Professor
+actor Student
+
+participant GroupView
+control GroupController
+participant GroupService
+participant Group
+participant Member
+participant Project
+database Repository
+
+Student -> GroupView : submitSolution
+GroupView -> GroupController : submitSolution (userName, Solution)
+GroupController -> GroupService : submitSolution (userName, Solution)
+
+GroupService -> Repository : getGroup(groupName)
+Repository --> GroupService : Group
+activate Group
+
+GroupService -> Group : hasMember(Membership)
+Group -> Repository : getMember(Membership.key)
+
+Repository --> Group : Member
+activate Member
+
+Group --> GroupService : [Member != NULL] true
+
+GroupService -> Repository : getProject(Solution.projectID)
+Repository --> GroupService : Project
+activate Project
+
+GroupService -> Group: sumbmitSolution (Membership, Solution, Project)
+
+Group -> Group : validations
+
+Group -> Project : addSolution(Solution)
+
+Group -> Member : addSubmitedSolution(Solution.ID)
+
+Group -> GroupService : notify(admin)
+
+GroupService -> Professor: email
+
+Group --> GroupService
+GroupService -> Repository : save(Group)
+Repository --> GroupService
+
+deactivate Member
+deactivate Project
+deactivate Group
+
+GroupService --> GroupController : success
+
+GroupService -> GroupController : success
+
+GroupController --> GroupView : renderSuccess
+
+@enduml
