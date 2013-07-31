@@ -2,11 +2,11 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: memberInstance, field: 'testInt', 'error')} required">
-	<label for="testInt">
-		<g:message code="member.testInt.label" default="Test Int" />
+<div class="fieldcontain ${hasErrors(bean: memberInstance, field: 'name', 'error')} required">
+	<label for="name">
+		<g:message code="member.name.label" default="Name" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="testInt" type="number" value="${memberInstance.testInt}" required=""/>
+	<g:textField name="name" required="" value="${memberInstance?.name}"/>
 </div>
 

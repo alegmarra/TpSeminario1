@@ -2,9 +2,11 @@ package groups
 
 class Member {
 
-    int testInt
+    // This propery may not exist when the User entity is done, or maybe
+    // it will be just be a copy of User.name
+    String name
 
     static constraints = {
-        testInt nullable:false
+        name blank: false
     }
 }

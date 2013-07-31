@@ -23,11 +23,11 @@
 			</g:if>
 			<ol class="property-list member">
 			
-				<g:if test="${memberInstance?.testInt}">
+				<g:if test="${memberInstance?.name}">
 				<li class="fieldcontain">
-					<span id="testInt-label" class="property-label"><g:message code="member.testInt.label" default="Test Int" /></span>
+					<span id="name-label" class="property-label"><g:message code="member.name.label" default="Name" /></span>
 					
-						<span class="property-value" aria-labelledby="testInt-label"><g:fieldValue bean="${memberInstance}" field="testInt"/></span>
+						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${memberInstance}" field="name"/></span>
 					
 				</li>
 				</g:if>
