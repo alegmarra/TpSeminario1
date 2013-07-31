@@ -32,6 +32,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${memberInstance?.group}">
+				<li class="fieldcontain">
+					<span id="group-label" class="property-label"><g:message code="member.group.label" default="Group" /></span>
+					
+						<span class="property-value" aria-labelledby="group-label"><g:link controller="group" action="show" id="${memberInstance?.group?.id}">${memberInstance?.group?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form>
 				<fieldset class="buttons">
