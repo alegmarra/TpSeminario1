@@ -2,20 +2,20 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: groupInstance, field: 'admin', 'error')} required">
-	<label for="admin">
-		<g:message code="group.admin.label" default="Admin" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:select id="admin" name="admin.id" from="${groups.Member.list()}" optionKey="id" required="" value="${groupInstance?.admin?.id}" class="many-to-one"/>
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: groupInstance, field: 'name', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: groupInstance, field: 'name', 'error')} ">
 	<label for="name">
 		<g:message code="group.name.label" default="Name" />
+		
+	</label>
+	<g:textField name="name" maxlength="60" value="${groupInstance?.name}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: groupInstance, field: 'adminKey', 'error')} required">
+	<label for="adminKey">
+		<g:message code="group.adminKey.label" default="Admin Key" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="name" required="" value="${groupInstance?.name}"/>
+	<g:select id="adminKey" name="adminKey.id" from="${groups.Membership.list()}" optionKey="id" required="" value="${groupInstance?.adminKey?.id}" class="many-to-one"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: groupInstance, field: 'collaborators', 'error')} ">
@@ -23,16 +23,7 @@
 		<g:message code="group.collaborators.label" default="Collaborators" />
 		
 	</label>
-	
-<ul class="one-to-many">
-<g:each in="${groupInstance?.collaborators?}" var="c">
-    <li><g:link controller="member" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></li>
-</g:each>
-<li class="add">
-<g:link controller="member" action="create" params="['group.id': groupInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'member.label', default: 'Member')])}</g:link>
-</li>
-</ul>
-
+	<g:select name="collaborators" from="${groups.Member.list()}" multiple="multiple" optionKey="id" size="5" value="${groupInstance?.collaborators*.id}" class="many-to-many"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: groupInstance, field: 'members', 'error')} ">
@@ -40,15 +31,6 @@
 		<g:message code="group.members.label" default="Members" />
 		
 	</label>
-	
-<ul class="one-to-many">
-<g:each in="${groupInstance?.members?}" var="m">
-    <li><g:link controller="member" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></li>
-</g:each>
-<li class="add">
-<g:link controller="member" action="create" params="['group.id': groupInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'member.label', default: 'Member')])}</g:link>
-</li>
-</ul>
-
+	<g:select name="members" from="${groups.Member.list()}" multiple="multiple" optionKey="id" size="5" value="${groupInstance?.members*.id}" class="many-to-many"/>
 </div>
 

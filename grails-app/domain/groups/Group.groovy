@@ -2,7 +2,8 @@ package groups
 
 class Group {
     String name
-    static hasOne = [admin: Member]
+    Membership adminKey
+//    static hasOne = [admin: User]
 //    Member admin
     static hasMany = [
             collaborators: Member,
@@ -11,7 +12,8 @@ class Group {
 
     static constraints = {
 //        admin nullable: false
-        name blank: false
+        name size: 4..60, unique: true
+        adminKey editable: false
     }
 
     static mapping = {

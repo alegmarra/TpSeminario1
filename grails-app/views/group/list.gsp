@@ -24,9 +24,9 @@
 				<thead>
 					<tr>
 					
-						<th><g:message code="group.admin.label" default="Admin" /></th>
-					
 						<g:sortableColumn property="name" title="${message(code: 'group.name.label', default: 'Name')}" />
+					
+						<th><g:message code="group.adminKey.label" default="Admin Key" /></th>
 					
 					</tr>
 				</thead>
@@ -34,9 +34,9 @@
 				<g:each in="${groupInstanceList}" status="i" var="groupInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${groupInstance.id}">${fieldValue(bean: groupInstance, field: "admin")}</g:link></td>
+						<td><g:link action="show" id="${groupInstance.id}">${fieldValue(bean: groupInstance, field: "name")}</g:link></td>
 					
-						<td>${fieldValue(bean: groupInstance, field: "name")}</td>
+						<td>${fieldValue(bean: groupInstance, field: "adminKey")}</td>
 					
 					</tr>
 				</g:each>

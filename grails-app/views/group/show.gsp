@@ -23,20 +23,20 @@
 			</g:if>
 			<ol class="property-list group">
 			
-				<g:if test="${groupInstance?.admin}">
-				<li class="fieldcontain">
-					<span id="admin-label" class="property-label"><g:message code="group.admin.label" default="Admin" /></span>
-					
-						<span class="property-value" aria-labelledby="admin-label"><g:link controller="member" action="show" id="${groupInstance?.admin?.id}">${groupInstance?.admin?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${groupInstance?.name}">
 				<li class="fieldcontain">
 					<span id="name-label" class="property-label"><g:message code="group.name.label" default="Name" /></span>
 					
 						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${groupInstance}" field="name"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${groupInstance?.adminKey}">
+				<li class="fieldcontain">
+					<span id="adminKey-label" class="property-label"><g:message code="group.adminKey.label" default="Admin Key" /></span>
+					
+						<span class="property-value" aria-labelledby="adminKey-label"><g:link controller="membership" action="show" id="${groupInstance?.adminKey?.id}">${groupInstance?.adminKey?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

@@ -6,9 +6,13 @@ class Member {
     // it will be just be a copy of User.name
     String name
 
-    static belongsTo = [group: Group]
+
+//    static belongsTo = [group: Group]
+    Membership membership
+
+//    static hasOne = [memberShip: Membership]
 
     static constraints = {
-        name blank: false
+
     }
 }
