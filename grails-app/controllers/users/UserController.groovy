@@ -1,5 +1,6 @@
 package users
 
+import UserServices.UserLoginService
 import org.springframework.dao.DataIntegrityViolationException
 
 class UserController {
@@ -7,7 +8,8 @@ class UserController {
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {
-        redirect(action: "list", params: params)
+//        redirect(action: "list", params: params)
+        redirect(action: "login", params: params)
     }
 
     def list(Integer max) {
@@ -98,5 +100,30 @@ class UserController {
             flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'user.label', default: 'User'), id])
             redirect(action: "show", id: id)
         }
+    }
+
+    def scaffold = User
+
+    def login = {
+        //Renders login view
+    }
+
+    def authenticate = {
+        def user = UserLoginService.authenticate(params.login, params.password)
+
+        if(user){
+            session.user = user
+            flash.message = "Hello ${user.name}!"
+            redirect(controller:"user", action:"list")
+        }else{
+            flash.message = "Sorry, ${params.login}. Please try again."
+            redirect(action:"login")
+        }
+    }
+
+    def logout = {
+        flash.message = "Goodbye ${session.user.name}"
+        session.user = null
+        redirect(controller:"user", action:"list")
     }
 }

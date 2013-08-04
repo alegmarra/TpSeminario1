@@ -22,33 +22,37 @@
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
 			<ol class="property-list membership">
-			
-				<g:if test="${membershipInstance?.key}">
-				<li class="fieldcontain">
-					<span id="key-label" class="property-label"><g:message code="membership.key.label" default="Key" /></span>
-					
-						<span class="property-value" aria-labelledby="key-label"><g:fieldValue bean="${membershipInstance}" field="key"/></span>
-					
-				</li>
-				</g:if>
+
+
+                <g:if test="${membershipInstance?.userKey}">
+                    <li class="fieldcontain">
+                        <span id="userKey-label" class="property-label"><g:message code="membership.userKey.label" default="User Name" /></span>
+
+                        <span class="property-value" aria-labelledby="userKey-label"><g:fieldValue bean="${membershipInstance}" field="userKey"/></span>
+
+                    </li>
+                </g:if>
 			
 				<g:if test="${membershipInstance?.groupKey}">
 				<li class="fieldcontain">
-					<span id="groupKey-label" class="property-label"><g:message code="membership.groupKey.label" default="Group Key" /></span>
+					<span id="groupKey-label" class="property-label"><g:message code="membership.groupKey.label" default="Group Name" /></span>
 					
 						<span class="property-value" aria-labelledby="groupKey-label"><g:fieldValue bean="${membershipInstance}" field="groupKey"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${membershipInstance?.userKey}">
-				<li class="fieldcontain">
-					<span id="userKey-label" class="property-label"><g:message code="membership.userKey.label" default="User Key" /></span>
-					
-						<span class="property-value" aria-labelledby="userKey-label"><g:fieldValue bean="${membershipInstance}" field="userKey"/></span>
-					
-				</li>
-				</g:if>
+
+                %{--
+                <g:if test="${membershipInstance?.key}">
+                <li class="fieldcontain">
+                    <span id="key-label" class="property-label"><g:message code="membership.key.label" default="Key" /></span>
+
+                        <span class="property-value" aria-labelledby="key-label"><g:fieldValue bean="${membershipInstance}" field="key"/></span>
+
+                </li>
+                </g:if>
+                --}%
 			
 			</ol>
 			<g:form>

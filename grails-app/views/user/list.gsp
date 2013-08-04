@@ -26,9 +26,9 @@
 					
 						<g:sortableColumn property="name" title="${message(code: 'user.name.label', default: 'Name')}" />
 					
-						<g:sortableColumn property="password" title="${message(code: 'user.password.label', default: 'Password')}" />
+						<g:sortableColumn property="login" title="${message(code: 'user.login.label', default: 'Login')}" />
 					
-						<g:sortableColumn property="userID" title="${message(code: 'user.userID.label', default: 'User ID')}" />
+						<g:sortableColumn property="password" title="${message(code: 'user.password.label', default: 'Password')}" />
 					
 					</tr>
 				</thead>
@@ -38,9 +38,9 @@
 					
 						<td><g:link action="show" id="${userInstance.id}">${fieldValue(bean: userInstance, field: "name")}</g:link></td>
 					
-						<td>${fieldValue(bean: userInstance, field: "password")}</td>
+						<td>${fieldValue(bean: userInstance, field: "login")}</td>
 					
-						<td>${fieldValue(bean: userInstance, field: "userID")}</td>
+						<td>${fieldValue(bean: userInstance, field: "password")}</td>
 					
 					</tr>
 				</g:each>
