@@ -20,6 +20,7 @@ class User {
         name size: 6..30, unique: true
         password password: true
         userID display: false
+        memberShips display: false
     }
 
     static mapping = {
