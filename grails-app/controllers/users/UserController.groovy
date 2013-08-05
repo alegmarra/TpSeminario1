@@ -1,6 +1,7 @@
 package users
 
 import org.springframework.dao.DataIntegrityViolationException
+import groups.GroupService
 
 class UserController {
 
@@ -98,5 +99,19 @@ class UserController {
             flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'user.label', default: 'User'), id])
             redirect(action: "show", id: id)
         }
+    }
+
+    def createGroup(Long id, String name) {
+        def groupInstance = GroupService.create(id, name)
+
+        if (!groupInstance) {
+            println '!groupInstance'
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'group.label', default: 'Group'), id])
+            redirect(action: "list")
+            return
+        }
+
+        redirect(action: "list")
+        [groupInstance: groupInstance]
     }
 }

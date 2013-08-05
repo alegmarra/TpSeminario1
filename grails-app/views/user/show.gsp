@@ -69,6 +69,17 @@
 					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 				</fieldset>
 			</g:form>
+
+            <g:form action="createGroup" >
+                <fieldset class="buttons">
+                    <g:hiddenField name="id" value="${userInstance?.id}" />
+                    <g:submitButton name="create" class="save" value="Create Group" />
+                    <label for="name">
+                        <g:message code="group.name.label" default="Name" />
+                    </label>
+                    <g:textField name="name" maxlength="30"/>
+                </fieldset>
+            </g:form>
 		</div>
 	</body>
 </html>
