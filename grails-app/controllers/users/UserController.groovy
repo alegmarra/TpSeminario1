@@ -107,11 +107,10 @@ class UserController {
         if (!groupInstance) {
             println '!groupInstance'
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'group.label', default: 'Group'), id])
-            redirect(action: "list")
+            redirect(action: "show", id: id)
             return
         }
 
-        redirect(action: "list")
-        [groupInstance: groupInstance]
+        redirect(controller: "group", action: "list")
     }
 }
