@@ -1,16 +1,28 @@
 package users
 
+import groups.Member
 import groups.Project
+import groups.State
+import groups.Visibility
 
 class Solution {
 
-    String ownerID
+    Date submitionDate
 
     String codeURL //github repo url?
 
-    static belongsTo = [project: Project, owner: User]
+    Visibility visibility
+    State state
+
+    static belongsTo = [
+            project: Project,
+            creator: Member
+    ]
 
     static constraints = {
-
+        submitionDate nullable: true, display: false, years:2013..2014
+//        codeURL url: true
     }
+
+
 }

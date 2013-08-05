@@ -24,9 +24,13 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="deadline" title="${message(code: 'project.deadline.label', default: 'Deadline')}" />
+						<g:sortableColumn property="softDeadline" title="${message(code: 'project.softDeadline.label', default: 'Soft Deadline')}" />
 					
-						<g:sortableColumn property="exercise" title="${message(code: 'project.exercise.label', default: 'Exercise')}" />
+						<g:sortableColumn property="finalDeadline" title="${message(code: 'project.finalDeadline.label', default: 'Final Deadline')}" />
+					
+						<th><g:message code="project.creator.label" default="Creator" /></th>
+					
+						<g:sortableColumn property="description" title="${message(code: 'project.description.label', default: 'Description')}" />
 					
 						<th><g:message code="project.group.label" default="Group" /></th>
 					
@@ -38,9 +42,13 @@
 				<g:each in="${projectInstanceList}" status="i" var="projectInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${projectInstance.id}">${fieldValue(bean: projectInstance, field: "deadline")}</g:link></td>
+						<td><g:link action="show" id="${projectInstance.id}">${fieldValue(bean: projectInstance, field: "softDeadline")}</g:link></td>
 					
-						<td>${fieldValue(bean: projectInstance, field: "exercise")}</td>
+						<td><g:formatDate date="${projectInstance.finalDeadline}" /></td>
+					
+						<td>${fieldValue(bean: projectInstance, field: "creator")}</td>
+					
+						<td>${fieldValue(bean: projectInstance, field: "description")}</td>
 					
 						<td>${fieldValue(bean: projectInstance, field: "group")}</td>
 					

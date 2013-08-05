@@ -2,20 +2,36 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'deadline', 'error')} ">
-	<label for="deadline">
-		<g:message code="project.deadline.label" default="Deadline" />
+<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'softDeadline', 'error')} ">
+	<label for="softDeadline">
+		<g:message code="project.softDeadline.label" default="Soft Deadline" />
 		
 	</label>
-	<g:datePicker name="deadline" precision="day"  value="${projectInstance?.deadline}" default="none" noSelection="['': '']" />
+	<g:datePicker name="softDeadline" precision="day"  value="${projectInstance?.softDeadline}" default="none" noSelection="['': '']" />
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'exercise', 'error')} ">
-	<label for="exercise">
-		<g:message code="project.exercise.label" default="Exercise" />
+<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'finalDeadline', 'error')} ">
+	<label for="finalDeadline">
+		<g:message code="project.finalDeadline.label" default="Final Deadline" />
 		
 	</label>
-	<g:textField name="exercise" value="${projectInstance?.exercise}"/>
+	<g:datePicker name="finalDeadline" precision="day"  value="${projectInstance?.finalDeadline}" default="none" noSelection="['': '']" />
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'creator', 'error')} required">
+	<label for="creator">
+		<g:message code="project.creator.label" default="Creator" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="creator" name="creator.id" from="${groups.Member.list()}" optionKey="id" required="" value="${projectInstance?.creator?.id}" class="many-to-one"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'description', 'error')} ">
+	<label for="description">
+		<g:message code="project.description.label" default="Description" />
+		
+	</label>
+	<g:textField name="description" value="${projectInstance?.description}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'group', 'error')} required">
@@ -49,5 +65,21 @@
 </li>
 </ul>
 
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'state', 'error')} required">
+	<label for="state">
+		<g:message code="project.state.label" default="State" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select name="state" from="${groups.State?.values()}" keys="${groups.State.values()*.name()}" required="" value="${projectInstance?.state?.name()}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'visibility', 'error')} required">
+	<label for="visibility">
+		<g:message code="project.visibility.label" default="Visibility" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select name="visibility" from="${groups.Visibility?.values()}" keys="${groups.Visibility.values()*.name()}" required="" value="${projectInstance?.visibility?.name()}"/>
 </div>
 

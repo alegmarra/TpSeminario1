@@ -26,8 +26,6 @@
 					
 						<th><g:message code="member.membership.label" default="Membership" /></th>
 					
-						<g:sortableColumn property="name" title="${message(code: 'member.name.label', default: 'Name')}" />
-					
 					</tr>
 				</thead>
 				<tbody>
@@ -35,8 +33,6 @@
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
 						<td><g:link action="show" id="${memberInstance.id}">${fieldValue(bean: memberInstance, field: "membership")}</g:link></td>
-					
-						<td>${fieldValue(bean: memberInstance, field: "name")}</td>
 					
 					</tr>
 				</g:each>

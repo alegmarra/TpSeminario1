@@ -32,11 +32,24 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${memberInstance?.name}">
+				<g:if test="${memberInstance?.projects}">
 				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="member.name.label" default="Name" /></span>
+					<span id="projects-label" class="property-label"><g:message code="member.projects.label" default="Projects" /></span>
 					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${memberInstance}" field="name"/></span>
+						<g:each in="${memberInstance.projects}" var="p">
+						<span class="property-value" aria-labelledby="projects-label"><g:link controller="project" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${memberInstance?.solutions}">
+				<li class="fieldcontain">
+					<span id="solutions-label" class="property-label"><g:message code="member.solutions.label" default="Solutions" /></span>
+					
+						<g:each in="${memberInstance.solutions}" var="s">
+						<span class="property-value" aria-labelledby="solutions-label"><g:link controller="solution" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

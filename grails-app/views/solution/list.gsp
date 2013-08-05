@@ -24,13 +24,17 @@
 				<thead>
 					<tr>
 					
+						<g:sortableColumn property="submitionDate" title="${message(code: 'solution.submitionDate.label', default: 'Submition Date')}" />
+					
 						<g:sortableColumn property="codeURL" title="${message(code: 'solution.codeURL.label', default: 'Code URL')}" />
 					
-						<th><g:message code="solution.owner.label" default="Owner" /></th>
-					
-						<g:sortableColumn property="ownerID" title="${message(code: 'solution.ownerID.label', default: 'Owner ID')}" />
+						<th><g:message code="solution.creator.label" default="Creator" /></th>
 					
 						<th><g:message code="solution.project.label" default="Project" /></th>
+					
+						<g:sortableColumn property="state" title="${message(code: 'solution.state.label', default: 'State')}" />
+					
+						<g:sortableColumn property="visibility" title="${message(code: 'solution.visibility.label', default: 'Visibility')}" />
 					
 					</tr>
 				</thead>
@@ -38,13 +42,17 @@
 				<g:each in="${solutionInstanceList}" status="i" var="solutionInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${solutionInstance.id}">${fieldValue(bean: solutionInstance, field: "codeURL")}</g:link></td>
+						<td><g:link action="show" id="${solutionInstance.id}">${fieldValue(bean: solutionInstance, field: "submitionDate")}</g:link></td>
 					
-						<td>${fieldValue(bean: solutionInstance, field: "owner")}</td>
+						<td>${fieldValue(bean: solutionInstance, field: "codeURL")}</td>
 					
-						<td>${fieldValue(bean: solutionInstance, field: "ownerID")}</td>
+						<td>${fieldValue(bean: solutionInstance, field: "creator")}</td>
 					
 						<td>${fieldValue(bean: solutionInstance, field: "project")}</td>
+					
+						<td>${fieldValue(bean: solutionInstance, field: "state")}</td>
+					
+						<td>${fieldValue(bean: solutionInstance, field: "visibility")}</td>
 					
 					</tr>
 				</g:each>

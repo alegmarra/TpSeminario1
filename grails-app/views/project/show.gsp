@@ -23,20 +23,38 @@
 			</g:if>
 			<ol class="property-list project">
 			
-				<g:if test="${projectInstance?.deadline}">
+				<g:if test="${projectInstance?.softDeadline}">
 				<li class="fieldcontain">
-					<span id="deadline-label" class="property-label"><g:message code="project.deadline.label" default="Deadline" /></span>
+					<span id="softDeadline-label" class="property-label"><g:message code="project.softDeadline.label" default="Soft Deadline" /></span>
 					
-						<span class="property-value" aria-labelledby="deadline-label"><g:formatDate date="${projectInstance?.deadline}" /></span>
+						<span class="property-value" aria-labelledby="softDeadline-label"><g:formatDate date="${projectInstance?.softDeadline}" /></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${projectInstance?.exercise}">
+				<g:if test="${projectInstance?.finalDeadline}">
 				<li class="fieldcontain">
-					<span id="exercise-label" class="property-label"><g:message code="project.exercise.label" default="Exercise" /></span>
+					<span id="finalDeadline-label" class="property-label"><g:message code="project.finalDeadline.label" default="Final Deadline" /></span>
 					
-						<span class="property-value" aria-labelledby="exercise-label"><g:fieldValue bean="${projectInstance}" field="exercise"/></span>
+						<span class="property-value" aria-labelledby="finalDeadline-label"><g:formatDate date="${projectInstance?.finalDeadline}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${projectInstance?.creator}">
+				<li class="fieldcontain">
+					<span id="creator-label" class="property-label"><g:message code="project.creator.label" default="Creator" /></span>
+					
+						<span class="property-value" aria-labelledby="creator-label"><g:link controller="member" action="show" id="${projectInstance?.creator?.id}">${projectInstance?.creator?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${projectInstance?.description}">
+				<li class="fieldcontain">
+					<span id="description-label" class="property-label"><g:message code="project.description.label" default="Description" /></span>
+					
+						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${projectInstance}" field="description"/></span>
 					
 				</li>
 				</g:if>
@@ -66,6 +84,24 @@
 						<g:each in="${projectInstance.solutions}" var="s">
 						<span class="property-value" aria-labelledby="solutions-label"><g:link controller="solution" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
 						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${projectInstance?.state}">
+				<li class="fieldcontain">
+					<span id="state-label" class="property-label"><g:message code="project.state.label" default="State" /></span>
+					
+						<span class="property-value" aria-labelledby="state-label"><g:fieldValue bean="${projectInstance}" field="state"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${projectInstance?.visibility}">
+				<li class="fieldcontain">
+					<span id="visibility-label" class="property-label"><g:message code="project.visibility.label" default="Visibility" /></span>
+					
+						<span class="property-value" aria-labelledby="visibility-label"><g:fieldValue bean="${projectInstance}" field="visibility"/></span>
 					
 				</li>
 				</g:if>

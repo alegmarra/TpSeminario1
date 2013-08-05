@@ -3,19 +3,27 @@ package groups
 
 import users.Solution
 
+
 class Project {
 
     String name
+    String description
 
-    String exercise
+    Date softDeadline
+    Date finalDeadline
 
-    Date deadline
+    Visibility visibility
+    State state
 
-    static belongsTo = [group: Group]
+    static belongsTo = [
+            group: Group,
+            creator: Member
+    ]
 
     static hasMany = [solutions: Solution]
 
     static constraints = {
-                 deadline nullable: true
+        softDeadline nullable: true
+        finalDeadline nullable: true
     }
 }

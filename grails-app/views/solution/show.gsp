@@ -23,6 +23,15 @@
 			</g:if>
 			<ol class="property-list solution">
 			
+				<g:if test="${solutionInstance?.submitionDate}">
+				<li class="fieldcontain">
+					<span id="submitionDate-label" class="property-label"><g:message code="solution.submitionDate.label" default="Submition Date" /></span>
+					
+						<span class="property-value" aria-labelledby="submitionDate-label"><g:formatDate date="${solutionInstance?.submitionDate}" /></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${solutionInstance?.codeURL}">
 				<li class="fieldcontain">
 					<span id="codeURL-label" class="property-label"><g:message code="solution.codeURL.label" default="Code URL" /></span>
@@ -32,20 +41,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${solutionInstance?.owner}">
+				<g:if test="${solutionInstance?.creator}">
 				<li class="fieldcontain">
-					<span id="owner-label" class="property-label"><g:message code="solution.owner.label" default="Owner" /></span>
+					<span id="creator-label" class="property-label"><g:message code="solution.creator.label" default="Creator" /></span>
 					
-						<span class="property-value" aria-labelledby="owner-label"><g:link controller="user" action="show" id="${solutionInstance?.owner?.id}">${solutionInstance?.owner?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${solutionInstance?.ownerID}">
-				<li class="fieldcontain">
-					<span id="ownerID-label" class="property-label"><g:message code="solution.ownerID.label" default="Owner ID" /></span>
-					
-						<span class="property-value" aria-labelledby="ownerID-label"><g:fieldValue bean="${solutionInstance}" field="ownerID"/></span>
+						<span class="property-value" aria-labelledby="creator-label"><g:link controller="member" action="show" id="${solutionInstance?.creator?.id}">${solutionInstance?.creator?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
@@ -55,6 +55,24 @@
 					<span id="project-label" class="property-label"><g:message code="solution.project.label" default="Project" /></span>
 					
 						<span class="property-value" aria-labelledby="project-label"><g:link controller="project" action="show" id="${solutionInstance?.project?.id}">${solutionInstance?.project?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${solutionInstance?.state}">
+				<li class="fieldcontain">
+					<span id="state-label" class="property-label"><g:message code="solution.state.label" default="State" /></span>
+					
+						<span class="property-value" aria-labelledby="state-label"><g:fieldValue bean="${solutionInstance}" field="state"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${solutionInstance?.visibility}">
+				<li class="fieldcontain">
+					<span id="visibility-label" class="property-label"><g:message code="solution.visibility.label" default="Visibility" /></span>
+					
+						<span class="property-value" aria-labelledby="visibility-label"><g:fieldValue bean="${solutionInstance}" field="visibility"/></span>
 					
 				</li>
 				</g:if>
