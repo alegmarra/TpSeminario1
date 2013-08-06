@@ -3,25 +3,19 @@ package users
 import groups.Membership
 
 
-class User {
+class User extends SecUser{
 
-    String name
-    String login
-    String password
-
-    // Basic idea just for testing purpouse, not safe at all
-//    String userID  = "$name:$password".getBytes().encodeBase64().toString()
+    Date joinDate
+    String fullName
 
     static hasMany = [
             memberShips: Membership
     ]
 
     static constraints = {
-        name size: 6..30, unique: true
-        login unique: true
-        password password: true
-//        userID display: false
+        fullName size: 2..200, blank: true
         memberShips display: false
+        joinDate nullable: true, display: false
     }
 
     static mapping = {
@@ -29,7 +23,7 @@ class User {
     }
 
 
-    String toString(){ name }
+    String toString(){ username }
 
 }
 
