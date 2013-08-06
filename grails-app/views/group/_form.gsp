@@ -10,12 +10,12 @@
 	<g:textField name="name" maxlength="60" value="${groupInstance?.name}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: groupInstance, field: 'adminKey', 'error')} required">
-	<label for="adminKey">
-		<g:message code="group.adminKey.label" default="Admin Key" />
+<div class="fieldcontain ${hasErrors(bean: groupInstance, field: 'adminship', 'error')} required">
+	<label for="adminship">
+		<g:message code="group.adminship.label" default="Adminship" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="adminKey" name="adminKey.id" from="${groups.Membership.list()}" optionKey="id" required="" value="${groupInstance?.adminKey?.id}" class="many-to-one"/>
+	<g:select id="adminship" name="adminship.id" from="${groups.Membership.list()}" optionKey="id" required="" value="${groupInstance?.adminship?.id}" class="many-to-one"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: groupInstance, field: 'collaborators', 'error')} ">
