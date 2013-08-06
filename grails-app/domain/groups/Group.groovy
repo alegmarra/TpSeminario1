@@ -1,4 +1,5 @@
 package groups
+import users.User
 
 class Group {
     String name
@@ -17,4 +18,5 @@ class Group {
     static mapping = {
         table 'groups'
     }
+
 }
