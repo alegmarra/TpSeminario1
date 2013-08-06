@@ -1,6 +1,7 @@
 package users
 
 import UserServices.UserLoginService
+import grails.plugins.springsecurity.Secured
 import org.springframework.dao.DataIntegrityViolationException
 
 class UserController {
@@ -21,6 +22,7 @@ class UserController {
         [userInstance: new User(params)]
     }
 
+    @Secured(['ROLE_USER', 'ROLE_ADMIN'])
     def save() {
         def userInstance = new User(params)
         if (!userInstance.save(flush: true)) {
@@ -43,6 +45,7 @@ class UserController {
         [userInstance: userInstance]
     }
 
+    @Secured(['ROLE_USER', 'ROLE_ADMIN'])
     def edit(Long id) {
         def userInstance = User.get(id)
         if (!userInstance) {
@@ -54,6 +57,7 @@ class UserController {
         [userInstance: userInstance]
     }
 
+    @Secured(['ROLE_USER', 'ROLE_ADMIN'])
     def update(Long id, Long version) {
         def userInstance = User.get(id)
         if (!userInstance) {
@@ -83,6 +87,7 @@ class UserController {
         redirect(action: "show", id: userInstance.id)
     }
 
+    @Secured(['ROLE_USER', 'ROLE_ADMIN'])
     def delete(Long id) {
         def userInstance = User.get(id)
         if (!userInstance) {

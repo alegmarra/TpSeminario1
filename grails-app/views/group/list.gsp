@@ -26,7 +26,7 @@
 					
 						<g:sortableColumn property="name" title="${message(code: 'group.name.label', default: 'Name')}" />
 					
-						<th><g:message code="group.adminKey.label" default="Admin Key" /></th>
+						<th><g:message code="group.adminship.label" default="Adminship" /></th>
 					
 					</tr>
 				</thead>
@@ -36,7 +36,7 @@
 					
 						<td><g:link action="show" id="${groupInstance.id}">${fieldValue(bean: groupInstance, field: "name")}</g:link></td>
 					
-						<td>${fieldValue(bean: groupInstance, field: "adminKey")}</td>
+						<td>${fieldValue(bean: groupInstance, field: "adminship")}</td>
 					
 					</tr>
 				</g:each>

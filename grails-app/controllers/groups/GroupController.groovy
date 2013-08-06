@@ -1,10 +1,14 @@
 package groups
 
+import grails.plugins.springsecurity.Secured
 import org.springframework.dao.DataIntegrityViolationException
 
 class GroupController {
 
+    def SpringSecurityService
+
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
+
 
     def index() {
         redirect(action: "list", params: params)
@@ -15,10 +19,12 @@ class GroupController {
         [groupInstanceList: Group.list(params), groupInstanceTotal: Group.count()]
     }
 
+    @Secured(['ROLE_USER', 'ROLE_ADMIN'])
     def create() {
         [groupInstance: new Group(params)]
     }
 
+    @Secured(['ROLE_USER', 'ROLE_ADMIN'])
     def save() {
         def groupInstance = new Group(params)
         if (!groupInstance.save(flush: true)) {
@@ -41,6 +47,7 @@ class GroupController {
         [groupInstance: groupInstance]
     }
 
+    @Secured(['ROLE_USER', 'ROLE_ADMIN'])
     def edit(Long id) {
         def groupInstance = Group.get(id)
         if (!groupInstance) {
@@ -52,6 +59,7 @@ class GroupController {
         [groupInstance: groupInstance]
     }
 
+    @Secured(['ROLE_USER', 'ROLE_ADMIN'])
     def update(Long id, Long version) {
         def groupInstance = Group.get(id)
         if (!groupInstance) {
@@ -81,6 +89,7 @@ class GroupController {
         redirect(action: "show", id: groupInstance.id)
     }
 
+    @Secured(['ROLE_USER', 'ROLE_ADMIN'])
     def delete(Long id) {
         def groupInstance = Group.get(id)
         if (!groupInstance) {

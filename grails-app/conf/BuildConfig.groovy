@@ -41,11 +41,11 @@ grails.project.dependency.resolution = {
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
 
-            compile 'org.codehaus.jackson:jackson-core-asl:1.8.3'
-            compile 'org.codehaus.jackson:jackson-mapper-asl:1.8.3'
-            compile 'com.infradna.tool:bridge-method-annotation:1.4'
-            compile 'com.infradna.tool:bridge-method-injector:1.4'
-            compile 'com.infradna.tool:bridge-method-injector-parent:1.4'
+//            compile 'org.codehaus.jackson:jackson-core-asl:1.8.3'
+//            compile 'org.codehaus.jackson:jackson-mapper-asl:1.8.3'
+//            compile 'com.infradna.tool:bridge-method-annotation:1.4'
+//            compile 'com.infradna.tool:bridge-method-injector:1.4'
+//            compile 'com.infradna.tool:bridge-method-injector-parent:1.4'
 
 
         // runtime 'mysql:mysql-connector-java:5.1.22'

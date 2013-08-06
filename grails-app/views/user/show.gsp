@@ -23,29 +23,31 @@
 			</g:if>
 			<ol class="property-list user">
 			
-				<g:if test="${userInstance?.name}">
+				<g:if test="${userInstance?.username}">
 				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="user.name.label" default="Name" /></span>
+					<span id="username-label" class="property-label"><g:message code="user.username.label" default="Username" /></span>
 					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${userInstance}" field="name"/></span>
+						<span class="property-value" aria-labelledby="username-label"><g:fieldValue bean="${userInstance}" field="username"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${userInstance?.login}">
-				<li class="fieldcontain">
-					<span id="login-label" class="property-label"><g:message code="user.login.label" default="Login" /></span>
-					
-						<span class="property-value" aria-labelledby="login-label"><g:fieldValue bean="${userInstance}" field="login"/></span>
-					
-				</li>
-				</g:if>
-			
+			%{--
 				<g:if test="${userInstance?.password}">
 				<li class="fieldcontain">
 					<span id="password-label" class="property-label"><g:message code="user.password.label" default="Password" /></span>
-					
+
 						<span class="property-value" aria-labelledby="password-label"><g:fieldValue bean="${userInstance}" field="password"/></span>
+
+				</li>
+				</g:if>
+			--}%
+			
+				<g:if test="${userInstance?.fullName}">
+				<li class="fieldcontain">
+					<span id="fullName-label" class="property-label"><g:message code="user.fullName.label" default="Full Name" /></span>
+					
+						<span class="property-value" aria-labelledby="fullName-label"><g:fieldValue bean="${userInstance}" field="fullName"/></span>
 					
 				</li>
 				</g:if>
@@ -57,6 +59,51 @@
 						<g:each in="${userInstance.memberShips}" var="m">
 						<span class="property-value" aria-labelledby="memberShips-label"><g:link controller="membership" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></span>
 						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${userInstance?.joinDate}">
+				<li class="fieldcontain">
+					<span id="joinDate-label" class="property-label"><g:message code="user.joinDate.label" default="Join Date" /></span>
+					
+						<span class="property-value" aria-labelledby="joinDate-label"><g:formatDate date="${userInstance?.joinDate}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${userInstance?.accountExpired}">
+				<li class="fieldcontain">
+					<span id="accountExpired-label" class="property-label"><g:message code="user.accountExpired.label" default="Account Expired" /></span>
+					
+						<span class="property-value" aria-labelledby="accountExpired-label"><g:formatBoolean boolean="${userInstance?.accountExpired}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${userInstance?.accountLocked}">
+				<li class="fieldcontain">
+					<span id="accountLocked-label" class="property-label"><g:message code="user.accountLocked.label" default="Account Locked" /></span>
+					
+						<span class="property-value" aria-labelledby="accountLocked-label"><g:formatBoolean boolean="${userInstance?.accountLocked}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${userInstance?.enabled}">
+				<li class="fieldcontain">
+					<span id="enabled-label" class="property-label"><g:message code="user.enabled.label" default="Enabled" /></span>
+					
+						<span class="property-value" aria-labelledby="enabled-label"><g:formatBoolean boolean="${userInstance?.enabled}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${userInstance?.passwordExpired}">
+				<li class="fieldcontain">
+					<span id="passwordExpired-label" class="property-label"><g:message code="user.passwordExpired.label" default="Password Expired" /></span>
+					
+						<span class="property-value" aria-labelledby="passwordExpired-label"><g:formatBoolean boolean="${userInstance?.passwordExpired}" /></span>
 					
 				</li>
 				</g:if>

@@ -32,11 +32,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${groupInstance?.adminKey}">
+				<g:if test="${groupInstance?.adminship}">
 				<li class="fieldcontain">
-					<span id="adminKey-label" class="property-label"><g:message code="group.adminKey.label" default="Admin Key" /></span>
+					<span id="adminship-label" class="property-label"><g:message code="group.adminship.label" default="Adminship" /></span>
 					
-						<span class="property-value" aria-labelledby="adminKey-label"><g:link controller="membership" action="show" id="${groupInstance?.adminKey?.id}">${groupInstance?.adminKey?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="adminship-label"><g:link controller="membership" action="show" id="${groupInstance?.adminship?.id}">${groupInstance?.adminship?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

@@ -29,11 +29,22 @@ class SecUserSecRole implements Serializable {
 	}
 
 	static SecUserSecRole create(SecUser secUser, SecRole secRole, boolean flush = false) {
-		new SecUserSecRole(secUser: secUser, secRole: secRole).save(flush: flush, insert: true)
+
+        println("CREATE")
+
+		def sUsR = new SecUserSecRole(secUser: secUser, secRole: secRole)
+
+        println "NEWED"
+
+        if(sUsR)
+            sUsR.save(flush: flush, insert: true, failOnError: true)
+        else
+            println "FAILED"
+
 	}
 
 	static boolean remove(SecUser secUser, SecRole secRole, boolean flush = false) {
-		SecUserSecRole instance = SecUserSecRole.findBySecUserAndSecRole(secUser, secRole)
+		SecUserSecRole instance = SecUserSecRole?.findBySecUserAndSecRole(secUser, secRole)
 		if (!instance) {
 			return false
 		}
