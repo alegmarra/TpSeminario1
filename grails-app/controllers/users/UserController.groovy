@@ -2,6 +2,7 @@ package users
 
 import UserServices.UserLoginService
 import org.springframework.dao.DataIntegrityViolationException
+import groups.GroupService
 
 class UserController {
 
@@ -125,5 +126,18 @@ class UserController {
         flash.message = "Goodbye ${session.user.name}"
         session.user = null
         redirect(controller:"user", action:"list")
+    }
+
+    def createGroup(Long id, String name) {
+        def groupInstance = GroupService.create(id, name)
+
+        if (!groupInstance) {
+            println '!groupInstance'
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'group.label', default: 'Group'), id])
+            redirect(action: "show", id: id)
+            return
+        }
+
+        redirect(controller: "group", action: "list")
     }
 }
