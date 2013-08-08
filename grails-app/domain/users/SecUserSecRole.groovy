@@ -29,17 +29,7 @@ class SecUserSecRole implements Serializable {
 	}
 
 	static SecUserSecRole create(SecUser secUser, SecRole secRole, boolean flush = false) {
-
-        println("CREATE")
-
-		def sUsR = new SecUserSecRole(secUser: secUser, secRole: secRole)
-
-        println "NEWED"
-
-        if(sUsR)
-            sUsR.save(flush: flush, insert: true, failOnError: true)
-        else
-            println "FAILED"
+        new SecUserSecRole(secUser: secUser, secRole: secRole).save(flush: flush, insert: true, failOnError: true)
 
 	}
 

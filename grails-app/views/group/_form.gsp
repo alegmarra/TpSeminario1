@@ -10,12 +10,16 @@
 	<g:textField name="name" maxlength="60" value="${groupInstance?.name}"/>
 </div>
 
+%{--
+
 <div class="fieldcontain ${hasErrors(bean: groupInstance, field: 'adminship', 'error')} required">
-	<label for="adminship">
+
+	    <label for="adminship">
 		<g:message code="group.adminship.label" default="Adminship" />
 		<span class="required-indicator">*</span>
-	</label>
-	<g:select id="adminship" name="adminship.id" from="${groups.Membership.list()}" optionKey="id" required="" value="${groupInstance?.adminship?.id}" class="many-to-one"/>
+	    </label>
+	    <g:select id="adminship" name="adminship.id" from="${groups.Membership.list()}" optionKey="id" required="" value="${groupInstance?.adminship?.id}" class="many-to-one"/>
+
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: groupInstance, field: 'collaborators', 'error')} ">
@@ -33,4 +37,6 @@
 	</label>
 	<g:select name="members" from="${groups.Member.list()}" multiple="multiple" optionKey="id" size="5" value="${groupInstance?.members*.id}" class="many-to-many"/>
 </div>
+
+--}%
 

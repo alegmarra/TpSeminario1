@@ -21,13 +21,15 @@ class GroupController {
 
     @Secured(['ROLE_USER', 'ROLE_ADMIN'])
     def create() {
-        [groupInstance: new Group(params)]
+        [groupInstance: new Group(params), ]
     }
 
-    @Secured(['ROLE_USER', 'ROLE_ADMIN'])
-    def save() {
-        def groupInstance = new Group(params)
-        if (!groupInstance.save(flush: true)) {
+    @Secured(['ROLE_USER', 'ROLE_ADMIN', ''])
+    def save(String name) {
+
+        def groupInstance = GroupService.create(name)
+
+        if (!groupInstance) {
             render(view: "create", model: [groupInstance: groupInstance])
             return
         }

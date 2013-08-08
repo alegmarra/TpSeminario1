@@ -5,11 +5,12 @@ class Membership {
     String userKey
     String groupKey
 
-    String key = "$userKey:$groupKey".getBytes().encodeBase64().toString()
+    String key = "$userKey:$groupKey"
 
     static constraints = {
 
-        key display: false
+        key display: false, unique: true
+
 
     }
 }

@@ -13,7 +13,7 @@ class SecUser {
 
 	static constraints = {
 		username blank: false, unique: true, size: 4..30
-		password blank: false
+		password blank: false, password: true
 	}
 
 	static mapping = {

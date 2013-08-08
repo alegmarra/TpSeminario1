@@ -1,5 +1,4 @@
 package groups
-import users.User
 
 class Group {
     String name

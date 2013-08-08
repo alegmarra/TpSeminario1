@@ -22,13 +22,8 @@ class BootStrap {
                               joinDate: null,
                               fullName: "Admin Admin").save(failOnError: true)
 
-
-
-        println "out of admin"
-
         SecUserSecRole.create admin, adminRole
 
-        println "ended Bootstrap"
     }
 
     def destroy = {

@@ -16,6 +16,9 @@ class User extends SecUser{
         fullName size: 2..200, blank: true
         memberShips display: false
         joinDate nullable: true, display: false
+        username blank: false, unique: true, size: 4..30
+        password blank: false, password: true
+
     }
 
     static mapping = {
